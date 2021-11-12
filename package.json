@@ -1,0 +1,28 @@
+{
+  "name": "@cssfn/jss-plugin-short",
+  "version": "1.0.0",
+  "description": "A plugin for JSS.",
+  "main": "dist/jss-plugin-short.js",
+  "types": "dist/jss-plugin-short.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssfn/jss-plugin-short.git"
+  },
+  "keywords": [
+    "jss",
+    "css",
+    "plugin"
+  ],
+  "author": "heymarco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cssfn/jss-plugin-short/issues"
+  },
+  "homepage": "https://github.com/cssfn/jss-plugin-short#readme",
+  "dependencies": {
+    "jss": "^10.8.2"
+  }
+}
