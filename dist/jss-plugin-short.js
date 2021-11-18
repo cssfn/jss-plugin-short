@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const shorts = {
     foreg: 'color',
     backg: 'background',
@@ -27,9 +25,8 @@ const onProcessStyle = (style, rule, sheet) => {
         return Object.fromEntries(styleArrLazy); // return the modified
     return style; // return the original
 };
-function pluginShort() {
+export default function pluginShort() {
     return {
         onProcessStyle,
     };
 }
-exports.default = pluginShort;

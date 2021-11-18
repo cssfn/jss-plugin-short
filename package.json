@@ -1,7 +1,8 @@
 {
   "name": "@cssfn/jss-plugin-short",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for JSS.",
+  "type": "module",
   "main": "dist/jss-plugin-short.js",
   "types": "dist/jss-plugin-short.d.ts",
   "scripts": {
