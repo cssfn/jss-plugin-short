@@ -1,6 +1,6 @@
 {
   "name": "@cssfn/jss-plugin-short",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A plugin for JSS.",
   "type": "module",
   "main": "dist/jss-plugin-short.js",
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/cssfn/jss-plugin-short#readme",
   "dependencies": {
-    "jss": "^10.8.2"
+    "jss": "^10.9.0"
   }
 }

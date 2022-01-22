@@ -14,7 +14,7 @@ const shorts = {
 const renameProps = (style) => {
     // stores the style's entries __only_if__ the modification is needed:
     let styleArrLazy = null;
-    for (const [propName, propIndex] of Object.keys(style).map((propName, propIndex) => [propName, propIndex])) {
+    for (const [propName, propIndex] of Object.keys(style).map((propName, propIndex) => [propName, propIndex])) { // no need to iterate Symbol(s), because [prop: Symbol] is for storing nested rule
         if (propName.startsWith('--'))
             continue; // ignores css variable
         if ((propName !== 'fallbacks') && !(propName in shorts))
@@ -47,6 +47,8 @@ const renameProps = (style) => {
     return style; // no changes => return the original
 };
 const onProcessStyle = (style, rule, sheet) => {
+    if (!style)
+        return {};
     return renameProps(style);
 };
 const onChangeValue = (propValue, propName, rule) => {
